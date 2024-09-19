@@ -1,5 +1,5 @@
 let scrollerID;
-let speed = 12; // 1 - Fast | 2 - Medium | 3 - Slow
+let speed = 15; // 1 - Fast | 2 - Medium | 3 - Slow
 let interval = speed * 5;
 
 function startScroll(){
