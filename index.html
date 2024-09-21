@@ -516,51 +516,92 @@ function showSlides() {
 <div class="d-flex align-items-center justify-content-center position-absolute w-100 h-100" style="top: 0; left: 0;">
 </div>
 <div class="position-relative">
-<h3 class="mb-5">💢KONFIRMASI💢 <br>Kehadiran & Ucapan</h3>
-<div>
-<p><div class="elementor-element elementor-element-4eab7292 wdp-sticky-section-no elementor-widget elementor-widget-heading" data-id="4eab7292" data-element_type="widget" data-widget_type="heading.default">
-				</div>
-				<div class="elementor-element elementor-element-5e2bc67f wdp-sticky-section-no elementor-widget elementor-widget-heading" data-id="5e2bc67f" data-element_type="widget" data-widget_type="heading.default">
-				</div>
-				<div class="elementor-element elementor-element-3c341143 wdp-sticky-section-no elementor-widget elementor-widget-weddingpress-forms" data-id="3c341143" data-element_type="widget" data-widget_type="weddingpress-forms.default">
-				<div class="elementor-widget-container">
-			        <div class="elementor-wdp-form-wrapper elementor-wdp-form-button-align-left">
-            <form method="get" class="wdp-form wdp-wa-form" id="wdp-wa-form-3c341143" data-waapi="https://api.whatsapp.com/send?phone=628985979665&amp;text=Hai%2C%20saya%20%25nama%25%20ingin%20konfirmasi%20kehadiran%20pada%20undangan%20pernikahan%20digital%20bahwa%20%25option%25%20bersama%20%25jumlah%25.%20Saya%20ucapkan%3A%20%20_%2A%25pesan%25%2A_%20Terima%20kasih%20ya.">
-                <div class="wdp-form-fields-wrapper">
-                    <div class="wdp-form-field-nama">
+<!=================================================================!>
+  <style>
+    *{
+form{
+      margin: 3% 0%;
+      width: 80%;
+      font-size: 15px;
+      text-shadow: 1px 1px 1px black;}
 
-                        <input type="text" name="wdp-form-nama" class="wdp-form-nama" id="wdp-form-nama-3c341143" placeholder="Tulis Nama" required="1" value="">
-                    </div>
-                                        
- <input name="wdp-form-jumlah" class="wdp-form-jumlah" id="wdp-form-jumlah-3c341143" type="show" placeholder="Bersama Istri/Saudara" value=""><br>
-  
-                                                                <input name="wdp-form-pesan" class="wdp-form-pesan" id="wdp-form-pesan-3c341143" type="show" placeholder="Tulis Ucapan" value="">
-                                                                        <div class="wdp-form-field-option wdp-option-type-radio">
-<br>
-                                                                        <label class="to-select-option"><input
-                                    type="radio" name="wdp-form-option wdp-form-option" class="wdp-form-option wdp-form-option" required="1" id="wdp-form-option-3c3411431"                                    value="Iya, Saya akan Datang"> Iya, Saya akan Datang</label><br>
-                                            <label class="to-select-option"><input
-                                    type="radio" name="wdp-form-option wdp-form-option" class="wdp-form-option wdp-form-option" required="1" id="wdp-form-option-3c3411431 wdp-form-option-3c3411432"                                    value="Saya Masih Ragu"> Saya Masih Ragu</label><br>
-                                            <label class="to-select-option"><input
-                                    type="radio" name="wdp-form-option wdp-form-option" class="wdp-form-option wdp-form-option" required="1" id="wdp-form-option-3c3411431 wdp-form-option-3c3411432 wdp-form-option-3c3411433"                                    value="Maaf, Saya Tidak Bisa Datang"> Maaf, Saya Tidak Bisa Datang</label><br>
-                                                        </div>
-                                                                    <div class="wdp-form-field-submit">
-                        <button type="submit" class="wdp-form-button">
-                            Kirim Via WhatsApp                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
+form h1{
+      text-align: center;}
+    
+form label{
+      display: block;
+      margin-bottom: 0%;}
+    
+form input, form textarea{
+      width: 100%;
+      padding: 1%;
+      margin-bottom: 0%;
+      box-sizing: border-box;
+      resize: vertical;
+      border-radius: 5%;}
+    
+form button{
+      background: green;
+      color: white;
+      padding: 3% 5%;
+      margin-top: 3%;
+      border: none;
+      cursor: pointer; 
+      border-radius: 45%;}
+    
+form button:hover{
+      background: red;}
+  </style>
+<!=================================================================!>
 
-                <script>
-            !function(t,r){"use strict";function n(e,a){var t,r=e.find(".wdp-form-nama"),n=e.find(".wdp-form-option"),o=e.find(".lp-form-user-phone"),d=e.find(".wdp-form-pesan"),p=e.find(".wdp-form-jumlah"),c=e.data("waapi");if(a?(r=r[0].value,d=d[0].value,p=p[0].value,o=o[0].value):(r=r.val(),o=o.val(),d=d.val(),p=p.val()),r&&n&&d&&c){if(1<n.length)for(var f=0;f<n.length;f++)"radio"===n[f].type&&n[f].checked&&(t=n[f].value);else t=n.val();return t&&(c=c.replace("%25option%25",encodeURI(t))),r&&(c=c.replace("%25nama%25",encodeURI(r))),d&&(c=c.replace("%25pesan%25",encodeURI(d))),p&&(c=c.replace("%25jumlah%25",encodeURI(p))),o&&(o=o.replace(/^8/g,"08").replace(/^0/g,"0").replace(/^620/g,"62").replace(/^0/g,"62"),c=c.replace("[whatsapp_number]",o)),e.attr("data-waapi",c),c}return c}t("#wdp-wa-form-3c341143").on("change keypress keyup",function(e){n(t(this),!0)}).submit(e=>{e.preventDefault(),e.stopPropagation();var a=n(t(e.target),!1);setTimeout(function(){r.location=a},1e3)})}(jQuery,window);
 
-        </script></p>
-</div>
-</div>
-</div>
-</section>
-</div>
+<!=================================================================!>
+<!=================================================================!>
+
+
+
+<!=================================================================!>
+<center><form></br>
+      <h1><font color="red">💢KONFIRMASI💢<br>Kehadiran & Ucapan</font></h1>
+      <label><font color="red">𝐍𝐚𝐦𝐚</font></label>
+      <input type="texttype="show" placeholder="Tulis Nama Anda" class="name">
+</br>
+      <label for=""><font color="red">𝐃𝐞𝐧𝐠𝐚𝐧 𝐒𝐨𝐝𝐚𝐫𝐚/𝐒𝐮𝐚𝐦𝐢</font></label>
+      <input type="texttype="show" placeholder="Rekan Kerja/Teman" class="email">
+</br></br>
+      <label for=""><font color="red">𝐀𝐤𝐚𝐧 𝐇𝐚𝐝𝐢𝐫//𝐓𝐢𝐝𝐚𝐤 𝐁𝐢𝐬𝐚 𝐇𝐚𝐝𝐢𝐫</font></label>
+      <select class="country">
+            <option>iya Akan Hadir</option>
+            <option>Tidak Bisa Hadir</option>
+            <option>Masih Ragu</option>
+      </select>
+</br></br>
+      <label for=""><font color="red">𝐔𝐜𝐚𝐩𝐚𝐧</font></label>
+      <textarea class="message type="show" placeholder="Tulis Ucapan"></textarea>
+      <button type="button" onclick="sendwhatsapp();">𝐊𝐢𝐫𝐢𝐦 𝐃𝐞𝐧𝐠𝐚𝐧 𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩</button>
+</br></form></center>
+
+
+<script>
+      function sendwhatsapp(){
+       var phonenumber = "+628985979665";
+
+       var name = document.querySelector(".name").value;
+       var email = document.querySelector(".email").value;
+       var country = document.querySelector(".country").value;
+       var message = document.querySelector(".message").value;
+
+       var url = "https://wa.me/" + phonenumber + "?text="
+       +"𝐍𝐚𝐦𝐚 : "+name+"%0a"
+       +"𝐃𝐞𝐧𝐠𝐚𝐧 : "+email+"%0a"
+       +"𝐊𝐞𝐡𝐚𝐝𝐢𝐫𝐚𝐧 : "+country+"%0a"
+       +"𝐔𝐜𝐚𝐩𝐚𝐧 : "+message
+       +"%0a%0a"
+       +"T̳R̳I̳S̳A̳N̳D̳ ̳U̳N̳D̳A̳N̳G̳A̳N̳ ̳D̳I̳G̳I̳T̳A̳L̳";
+
+       window.open(url, '_blank').focus();}
+</script>
+<!=================================================================!>
 
 <div class="row d-flex justify-content-center">
 <ul class="list-group list-group-flush text-left" id="qna-y2sc0">
