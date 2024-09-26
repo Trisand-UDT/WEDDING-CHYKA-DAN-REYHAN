@@ -550,23 +550,23 @@ form button:hover{
 
 <!====================================================!>
 <center><form>
-      <h2><font color="red">💢KONFIRMASI💢<br>Kehadiran & Ucapan</font></h2>
+      <h2><font color="red"><b>💢KONFIRMASI💢<br>Kehadiran & Ucapan</b></font></h2>
       <label><hide Nama Label 1></label>
       <input type="texttype="show" placeholder="Tulis Nama Anda" class="name">
 </br>
       <label for=""><hide Nama Label 2></label>
       <input type="texttype="show" placeholder="Dengan Saudara/Rekan" class="email">
 </br></br>
-      <label for=""><font color="red">𝐊𝐞𝐡𝐚𝐝𝐢𝐫𝐚𝐧</font></label>
+      <label for=""><font color="red" font size="5"><b>Kehadiran</b></font></label>
       <select class="country">
             <option>Iya Saya Akan Hadir</option>
             <option>Maaf Saya Tidak Bisa Hadir</option>
             <option>Saya Masih Ragu</option>
       </select>
 </br></br>
-      <label for=""><font color="red">𝐔𝐜𝐚𝐩𝐚𝐧</font></label>
+      <label for=""><font color="red" font size="5"><b>Ucapan</b></font></label>
       <textarea class="message type="show" placeholder="Tulis Ucapan"></textarea>
-      <button type="button" onclick="sendwhatsapp();"><font size="2">𝐊𝐢𝐫𝐢𝐦 𝐃𝐞𝐧𝐠𝐚𝐧 𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩</font></button>
+      <button type="button" onclick="sendwhatsapp();"><font size="2">Kirim Dengan WhatsApp</font></button>
 </form></center>
 
 
@@ -582,12 +582,12 @@ form button:hover{
        var url = "https://wa.me/" + phonenumber + "?text="
        +"Hai Saya ingin Konfirmasi Kehadiran Undangan :"
        +"%0a%0a"
-       +"𝐍𝐚𝐦𝐚 : "+name+"%0a"
-       +"𝐃𝐞𝐧𝐠𝐚𝐧 : "+email+"%0a"
-       +"𝐊𝐞𝐡𝐚𝐝𝐢𝐫𝐚𝐧 : "+country+"%0a"
-       +"𝐔𝐜𝐚𝐩𝐚𝐧 : "+message
+       +"Nama : "+name+"%0a"
+       +"Dengan : "+email+"%0a"
+       +"Kehadiran : "+country+"%0a"
+       +"Ucapan : "+message
        +"%0a%0a"
-       +"T̳R̳I̳S̳A̳N̳D̳ ̳U̳N̳D̳A̳N̳G̳A̳N̳ ̳D̳I̳G̳I̳T̳A̳L̳";
+       +"~TRISAND UNDANGAN DIGITAL~";
 
        window.open(url, '_blank').focus();}
 </script>
