@@ -49,10 +49,10 @@
   height: 100px;
   bottom: 0;
   right: 0;
-  margin: 10px 40px;
+  margin: 15px 25px;
 }
 .floating-container:hover {
-  height: 350px;
+  height: 300px;
 }
 .floating-container:hover .floating-button {
   box-shadow: 0 10px 25px rgba(44, 179, 240, 0.6);
@@ -75,20 +75,20 @@
 }
 .floating-container .floating-button {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   background: #2cb3f0;
   bottom: 0;
-  border-radius: 10%;
+  border-radius: 30%;
   left: 0;
   right: 0;
   margin: auto;
   color: white;
-  line-height: 50px;
+  line-height: 30px;
   text-align: center;
-  font-size: 15px;
+  font-size: 10px;
   z-index: 100;
-  box-shadow: 0 5px 5px 5px rgba(44, 179, 240, 0.6);
+  box-shadow: 0 5px 5px 1px rgba(0, 198, 248, 0.6);
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -96,11 +96,11 @@
 .floating-container .float-element {
   position: relative;
   display: block;
-  border-radius: 50%;
+  border-radius: 100%;
   width: 50px;
-  height: 50px;
-  margin: 0px auto;
-  color: white;
+  height: 0px;
+  margin: 35px auto;
+  color: rgb(255, 255, 255);
   font-weight: 0;
   text-align: center;
   line-height: 0px;
@@ -114,14 +114,14 @@
   font-size: 3px;
 }
 .floating-container .float-element:nth-child(1) {
-  background: #42A5F5;
-  box-shadow: 0 5px 5px 5px rgba(66, 165, 245, 0.5);
+  background: #02a5e6;
+  box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.5);
 }
 .floating-container .float-element:nth-child(2) {
-  background: #4CAF50;
-  box-shadow: 0 5px 5px 5px rgba(76, 175, 80, 0.5);
+  background: #00f7ff;
+  box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.5);
 }
 .floating-container .float-element:nth-child(3) {
-  background: #FF9800;
-  box-shadow: 0 5px 5px 5px rgba(255, 152, 0, 0.5);
+  background: #00c3ff;
+  box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.5);
 }
