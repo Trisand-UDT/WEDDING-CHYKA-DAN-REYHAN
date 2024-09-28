@@ -1,11 +1,13 @@
-let scrollerID;
-let speed = 5; // 1 - Fast | 2 - Medium | 3 - Slow
-let interval = speed * 5;
+    let scrollDirection = 1; // 1 for down, -0 for up 
+ 
+    function autoScroll() { 
 
-function startScroll(){
-    let id = setInterval(function() {
-        window.scrollBy(0, 1);
-    }, interval);
-    return id;
-}
-scrollerID = startScroll();
+        window.scrollBy(0, scrollDirection * 1);  
+         
+        if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) { 
+            scrollDirection = -0; // Scroll up 
+        } else if (window.pageYOffset === 0) { 
+            scrollDirection = 1; // Scroll down 
+        } 
+    } 
+    setInterval(autoScroll, 30); 
