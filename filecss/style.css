@@ -1,0 +1,216 @@
+.inner-container {
+  display: flex;
+  width: calc(30rem * 15);
+  transform: translateX(0%);
+  animation: animate 50s linear infinite;}
+
+@keyframes animate {
+  100% {
+    transform: translateX(calc(-30rem * 7));}}
+
+.img-box {
+  width: 100%;
+  padding: 1px;}
+
+.img-box img {
+  width: 100%;
+  transform: perspective(300px) scale(1);
+  transition: all .3s linear;
+  border-radius: 1rem;
+  border: 1px solid rgb(0, 0, 0);}
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+button{
+    background-color: #02cb69;
+    border: 100%;
+    color: #ffffff;
+    margin: 10px 0 30px 0;
+    padding: 5px 20px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+#alert{
+    border: 100%;
+    width: 50%;
+    text-align: center;
+    background-color: black;
+    color: #ffffff;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 175px;
+    border-radius: 10px;
+    display: none;
+}
+
+@-webkit-keyframes come-in {
+  0% {
+    -webkit-transform: translatey(100px);
+            transform: translatey(100px);
+    opacity: 0;
+  }
+  30% {
+    -webkit-transform: translateX(-50px) scale(0.4);
+            transform: translateX(-50px) scale(0.4);
+  }
+  70% {
+    -webkit-transform: translateX(0px) scale(1.2);
+            transform: translateX(0px) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translatey(0px) scale(1);
+            transform: translatey(0px) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes come-in {
+  0% {
+    -webkit-transform: translatey(100px);
+            transform: translatey(100px);
+    opacity: 0;
+  }
+  30% {
+    -webkit-transform: translateX(-50px) scale(0.4);
+            transform: translateX(-50px) scale(0.4);
+  }
+  70% {
+    -webkit-transform: translateX(0px) scale(1.2);
+            transform: translateX(0px) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translatey(0px) scale(1);
+            transform: translatey(0px) scale(1);
+    opacity: 1;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.floating-container {
+  position: fixed;
+  width: 30px;
+  height: 100px;
+  bottom: 0;
+  right: 0;
+  margin: 15px 25px;
+}
+.floating-container:hover {
+  height: 300px;
+}
+.floating-container:hover .floating-button {
+  box-shadow: 0 10px 25px rgba(44, 179, 240, 0.6);
+  -webkit-transform: translatey(5px);
+          transform: translatey(5px);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.floating-container:hover .element-container .float-element:nth-child(1) {
+  -webkit-animation: come-in 0.4s forwards 0.2s;
+          animation: come-in 0.4s forwards 0.2s;
+}
+.floating-container:hover .element-container .float-element:nth-child(2) {
+  -webkit-animation: come-in 0.4s forwards 0.4s;
+          animation: come-in 0.4s forwards 0.4s;
+}
+.floating-container:hover .element-container .float-element:nth-child(3) {
+  -webkit-animation: come-in 0.4s forwards 0.6s;
+          animation: come-in 0.4s forwards 0.6s;
+}
+.floating-container .floating-button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #2cb3f0;
+  bottom: 0;
+  border-radius: 30%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: white;
+  line-height: 30px;
+  text-align: center;
+  font-size: 10px;
+  z-index: 100;
+  box-shadow: 0 5px 5px 1px rgba(0, 198, 248, 0.6);
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.floating-container .float-element {
+  position: relative;
+  display: block;
+  border-radius: 100%;
+  width: 50px;
+  height: 0px;
+  margin: 35px auto;
+  color: rgb(255, 255, 255);
+  font-weight: 0;
+  text-align: center;
+  line-height: 0px;
+  z-index: 0;
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+.floating-container .float-element .material-icons {
+  vertical-align: middle;
+  font-size: 3px;
+}
+.floating-container .float-element:nth-child(1) {
+  background: #02a5e6;
+  box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+.floating-container .float-element:nth-child(2) {
+  background: #00f7ff;
+  box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+.floating-container .float-element:nth-child(3) {
+  background: #00c3ff;
+  box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+    *{
+form{
+      margin: 0% 0%;
+      width: 80%;
+      font-size: 17px;
+      text-shadow: 1px 1px 1px black;}
+
+form h2{
+      text-align: center;}
+    
+form label{
+      display: block;
+      margin-bottom: 1%;}
+    
+form input, form textarea{
+      width: 100%;
+      padding: 1%;
+      margin-bottom: 0%;
+      box-sizing: border-box;
+      border: 1.5px solid black;
+      resize: vertical;
+      border-radius: solid;}
+    
+form button{
+      background: green;
+      color: white;
+      padding: 3% 5%;
+      margin-top: 3%;
+      border: 100%;
+      border: 1px solid black;
+      cursor: pointer; 
+      border-radius: solid;}
+    
+form button:hover{
+      background: red;}
